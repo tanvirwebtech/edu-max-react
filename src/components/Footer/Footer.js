@@ -1,18 +1,28 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../images/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faFacebook,
+    faLinkedin,
+    faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import "./Footer.css";
 
 const Footer = () => {
+    const facebookIcon = <FontAwesomeIcon icon={faFacebook} />;
+    const twitterIcon = <FontAwesomeIcon icon={faTwitter} />;
+    const linkedinIcon = <FontAwesomeIcon icon={faLinkedin} />;
     return (
         <div className="footer bg-edu-soft-blue">
-            <div className="container mx-auto">
+            <div className="container mx-auto py-8">
                 <div className="grid grid-cols-7 gap-4">
                     <div className="site-info flex items-center justify-center col-span-2">
                         <div className="logo">
                             <img src={logo} alt="" />
                         </div>
                     </div>
-                    <div className="importans-links col-start-3 col-span-5">
+                    <div className="importans-links col-start-3 col-span-2">
                         <h3 className="font-medium">Important Links</h3>
                         <p>
                             <NavLink
@@ -48,7 +58,32 @@ const Footer = () => {
                             </NavLink>
                         </p>
                     </div>
-                    <div className="social"></div>
+                    <div className="social col-span-3 text-center">
+                        <h2 className="text-2xl text-edu-blue text-center pb-4">
+                            Follow Us On Social Media
+                        </h2>
+                        <a
+                            href="https://www.facebook.com/tanvirwebtech"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {facebookIcon}
+                        </a>
+                        <a
+                            href="https://www.twitter.com/tanvirwebtech"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {twitterIcon}
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/tanvirwebtech"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {linkedinIcon}
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

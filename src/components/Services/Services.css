@@ -1,14 +1,13 @@
 .heading {
-  position: relative;
-  padding-bottom: 15px;
+    position: relative;
 }
 .heading::before {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 5px;
-  background-color: #272774;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #272774;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }

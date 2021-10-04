@@ -9,6 +9,8 @@ module.exports = {
             },
             backgroundColor: (theme) => ({
                 "edu-soft-blue": "#e4fdfd",
+                "edu-sky": "#4a78e1",
+                "edu-navy": "#272774",
             }),
         },
     },
