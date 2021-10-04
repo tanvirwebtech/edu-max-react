@@ -19,5 +19,3 @@ This project is all about
 -   Showing Services
 
 *   Courses
-
--
