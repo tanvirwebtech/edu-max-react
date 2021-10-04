@@ -2,7 +2,15 @@ module.exports = {
     purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
     darkMode: false, // or 'media' or 'class'
     theme: {
-        extend: {},
+        extend: {
+            textColor: {
+                "edu-sky": "#4a78e1",
+                "edu-navy": "#272774",
+            },
+            backgroundColor: (theme) => ({
+                "edu-soft-blue": "#e4fdfd",
+            }),
+        },
     },
     variants: {
         extend: {},
