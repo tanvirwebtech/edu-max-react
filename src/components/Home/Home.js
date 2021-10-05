@@ -23,13 +23,13 @@ const Home = () => {
     return (
         <>
             <div className="home-bg">
-                <div className="container grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 mx-auto hero-content">
-                    <div className="md:py-32 sm:py-24 py-20 px-8 md:px-2 sm:px-2 sm:text-left md:text-left text-center">
+                <div className="container grid grid-cols-1 mx-auto hero-content">
+                    <div className="md:py-32 sm:py-24 py-20 px-8 md:px-2 sm:px-2 text-center">
                         <h2 className="font-bold text-5xl text-white">
                             Welcome TO <br />{" "}
                             <span className="main-color">EDU MAX</span>{" "}
                         </h2>
-                        <p className="text-white my-8 text-xl">
+                        <p className="text-white my-8 md:px-28 sm:px-16 px-8 text-xl">
                             Edu Max is the one the largest e-learning platform
                             in Bangladesh. We have more than 50+ Qualified
                             trainer for different courses. Our trainee
