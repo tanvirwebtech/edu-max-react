@@ -10,9 +10,24 @@ import {
 import "./Footer.css";
 
 const Footer = () => {
-    const facebookIcon = <FontAwesomeIcon icon={faFacebook} />;
-    const twitterIcon = <FontAwesomeIcon icon={faTwitter} />;
-    const linkedinIcon = <FontAwesomeIcon icon={faLinkedin} />;
+    const facebookIcon = (
+        <FontAwesomeIcon
+            className="md:text-2xl text-xl text-edu-navy mx-2 md:mx-4 sm:mx-2"
+            icon={faFacebook}
+        />
+    );
+    const twitterIcon = (
+        <FontAwesomeIcon
+            className="md:text-2xl text-xl text-edu-navy mx-2 md:mx-4 sm:mx-2"
+            icon={faTwitter}
+        />
+    );
+    const linkedinIcon = (
+        <FontAwesomeIcon
+            className="md:text-2xl text-xl text-edu-navy mx-2 md:mx-4 sm:mx-2"
+            icon={faLinkedin}
+        />
+    );
     return (
         <div className="footer bg-edu-soft-blue">
             <div className="container mx-auto py-8">
@@ -23,10 +38,12 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="importans-links col-start-3 col-span-2">
-                        <h3 className="font-medium">Important Links</h3>
+                        <h3 className="font-medium text-center">
+                            Important Links
+                        </h3>
                         <p>
                             <NavLink
-                                className="nav-link footer-nav px-4 py-2 mx-4"
+                                className="nav-link footer-nav px-4 py-2 mx-1"
                                 to="/home"
                             >
                                 Home
@@ -34,7 +51,7 @@ const Footer = () => {
                         </p>
                         <p>
                             <NavLink
-                                className="nav-link footer-nav px-4 py-2 mx-4"
+                                className="nav-link footer-nav px-4 py-2 mx-1"
                                 to="/about"
                             >
                                 About
@@ -42,7 +59,7 @@ const Footer = () => {
                         </p>
                         <p>
                             <NavLink
-                                className="nav-link footer-nav px-4 py-2 mx-4"
+                                className="nav-link footer-nav px-4 py-2 mx-1"
                                 to="/service"
                             >
                                 Services
@@ -51,7 +68,7 @@ const Footer = () => {
                         <p>
                             {" "}
                             <NavLink
-                                className="nav-link footer-nav px-4 py-2 mx-4"
+                                className="nav-link footer-nav px-4 py-2 mx-1"
                                 to="/"
                             >
                                 Home
@@ -59,7 +76,7 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="social col-span-3 text-center">
-                        <h2 className="text-2xl text-edu-blue text-center pb-4">
+                        <h2 className="md:text-2xl sm:text-xl text-xl text-edu-blue text-center pb-4">
                             Follow Us On Social Media
                         </h2>
                         <a

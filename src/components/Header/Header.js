@@ -18,8 +18,8 @@ const Header = () => {
     };
     return (
         <div className="header ">
-            <div className="container mx-16">
-                <nav className="flex items-center justify-between">
+            <div className="container md:mx-16 sm:mx-16 mx-auto">
+                <nav className="w-full flex items-center justify-between">
                     <div className="logo">
                         <NavLink to="/home">
                             <img src={logo} alt="" className="w-full" />
@@ -31,7 +31,7 @@ const Header = () => {
                         <NavBar></NavBar>
                     </div>
 
-                    <div className="nav-toggler lg:hidden md:hidden sm:block block">
+                    <div className="nav-toggler mx-4 lg:hidden md:hidden sm:block block">
                         <button onClick={handleToggle}>
                             {
                                 <FontAwesomeIcon
