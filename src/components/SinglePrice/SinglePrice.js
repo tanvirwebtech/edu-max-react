@@ -11,7 +11,7 @@ const SinglePrice = (props) => {
     } = props;
     return (
         <div>
-            <div className="package text-center border-2 p-4 rounded">
+            <div className="package text-center border-2 m-2 p-4 rounded">
                 <h2 className="font-bold text-4xl text-center text-edu-navy my-4">
                     Package: {packageName}
                 </h2>

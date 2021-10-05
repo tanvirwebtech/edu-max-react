@@ -17,7 +17,7 @@ const About = () => {
             {/* Who are We Section  */}
 
             <div className="team-work container mx-auto">
-                <div className="grid grid-cols-2 gap-4 my-8">
+                <div className="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4 my-8 mx-auto">
                     <div className="team-thumb">
                         <img src={team} alt="" className="mx-auto" />
                     </div>
